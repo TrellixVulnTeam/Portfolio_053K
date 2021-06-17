@@ -1,0 +1,9 @@
+.section-about {
+  background-color: $color-secondary-dark;
+  margin-top: -20vh;
+  height: 1000px;
+
+  // @include respond(tab-port) {
+  //     padding: 20rem 0;
+  // }
+}
