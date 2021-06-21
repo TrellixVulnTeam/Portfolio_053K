@@ -1,7 +1,8 @@
 .section-about {
   background-color: $color-secondary-dark;
   margin-top: -15vh;
-  height: 1200px;
+  // height: 1200px;
+  height: 80vh;
 
   &__img {
     width: 80%;
@@ -48,20 +49,43 @@
       height: 10rem;
     }
 
+    &--firebase {
+      width: 18rem;
+      height: 15rem;
+    }
+
     &--arduino {
       width: 18rem;
       height: 10rem;
+      padding-bottom: 13px;
+    }
+
+    &--github {
+      width: 18rem;
+      height: 12rem;
+      margin-left: 6rem;
+      margin-right: 6rem;
     }
 
     &--jira {
-      width: 37rem;
-      height: 12rem;
+      width: 41rem;
+      height: 11rem;
+      margin-left: 6rem;
+      margin-right: 3rem;
     }
 
     &--pwf {
-      width: 25rem;
-      height: 13rem;
-      border-radius: 5px;
+      width: 20rem;
+      height: 12rem;
+      border-radius: 10px;
+      margin-left: 6rem;
+      margin-right: 6rem;
     }
   }
+}
+
+.section-projects {
+  margin-top: -15vh;
+  background-color: $color-primary;
+  height: 2000px;
 }

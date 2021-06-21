@@ -63,14 +63,26 @@ body {
 
 .heading-about {
   margin-top: 30rem;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   color: $color-primary;
 }
 
 .heading-skills {
   margin-top: 30rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   color: $color-primary;
+}
+
+.heading-tools {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  color: $color-primary;
+}
+
+.heading-projects {
+  margin-top: 30rem;
+  margin-bottom: 5rem;
+  color: $color-white;
 }
 
 .paragraph {
