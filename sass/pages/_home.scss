@@ -1,9 +1,67 @@
 .section-about {
   background-color: $color-secondary-dark;
-  margin-top: -20vh;
-  height: 1000px;
+  margin-top: -15vh;
+  height: 1200px;
 
+  &__img {
+    width: 80%;
+    clip-path: circle(44% at 50% 42%);
+  }
   // @include respond(tab-port) {
   //     padding: 20rem 0;
   // }
+
+  &__detail {
+    text-align: center;
+  }
+}
+
+.section-skills {
+  margin-top: -15vh;
+  height: 2000px;
+
+  &__img {
+    height: 15rem;
+    margin: 7rem;
+
+    &--html {
+      width: 11.5rem;
+    }
+
+    &--sass {
+      width: 20rem;
+      height: 10rem;
+    }
+
+    &--node {
+      width: 20rem;
+      height: 10rem;
+    }
+
+    &--express {
+      width: 25rem;
+      height: 10rem;
+    }
+
+    &--mongodb {
+      width: 25rem;
+      height: 10rem;
+    }
+
+    &--arduino {
+      width: 18rem;
+      height: 10rem;
+    }
+
+    &--jira {
+      width: 37rem;
+      height: 12rem;
+    }
+
+    &--pwf {
+      width: 25rem;
+      height: 13rem;
+      border-radius: 5px;
+    }
+  }
 }

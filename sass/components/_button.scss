@@ -31,15 +31,22 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    margin-top: 100px;
-    padding: 2rem 4rem;
+    margin-top: 50px;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 3rem;
+    font-size: 2rem;
     border: none;
     cursor: pointer;
     background-color: white;
+  }
+
+  &__about {
+    width: 45%;
+    height: 50px;
+    text-align: center;
+    padding-top: 9px;
+    margin: 10px;
   }
 }
