@@ -62,24 +62,19 @@
 
     &--github {
       width: 18rem;
-      height: 12rem;
-      margin-left: 6rem;
-      margin-right: 6rem;
+      height: 12rem;      
     }
 
     &--jira {
-      width: 41rem;
-      height: 11rem;
-      margin-left: 6rem;
-      margin-right: 3rem;
+      width: 20rem;
+      height: 11rem;      
+      border-radius: 10px;
     }
 
     &--pwf {
       width: 20rem;
       height: 12rem;
-      border-radius: 10px;
-      margin-left: 6rem;
-      margin-right: 6rem;
+      border-radius: 10px;     
     }
   }
 }

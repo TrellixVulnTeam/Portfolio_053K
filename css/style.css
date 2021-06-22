@@ -447,20 +447,15 @@ body {
       padding-bottom: 13px; }
     .section-skills__img--github {
       width: 18rem;
-      height: 12rem;
-      margin-left: 6rem;
-      margin-right: 6rem; }
+      height: 12rem; }
     .section-skills__img--jira {
-      width: 41rem;
+      width: 20rem;
       height: 11rem;
-      margin-left: 6rem;
-      margin-right: 3rem; }
+      border-radius: 10px; }
     .section-skills__img--pwf {
       width: 20rem;
       height: 12rem;
-      border-radius: 10px;
-      margin-left: 6rem;
-      margin-right: 6rem; }
+      border-radius: 10px; }
 
 .section-projects {
   margin-top: -15vh;
