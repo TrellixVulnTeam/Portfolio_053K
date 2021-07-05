@@ -2,6 +2,7 @@
   text-align: center !important;
 }
 
+//margin
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
@@ -17,4 +18,21 @@
 }
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+//padding
+.u-padding-top-tiny {
+  padding-top: 1.6rem;
+}
+.u-padding-top-small {
+  padding-top: 2rem;
+}
+.u-padding-top-medium {
+  padding-top: 4rem;
+}
+.u-padding-top-large {
+  padding-top: 8rem;
+}
+.u-padding-top-huge {
+  padding-top: 12rem;
 }

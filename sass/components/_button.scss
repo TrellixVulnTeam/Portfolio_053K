@@ -26,6 +26,8 @@
 // }
 
 .btn {
+  z-index: 10;
+
   &,
   &:link,
   &:visited {
@@ -39,9 +41,43 @@
     font-size: 2rem;
     border: none;
     cursor: pointer;
-    background-color: white;
+    z-index: 10;
   }
 
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
   // &__discover {
   //   width: 20%;
   //   height: 100px;
@@ -50,11 +86,24 @@
   //   padding-top: 20px;
   // }
 
+  width: 45%;
+  height: 50px;
+  text-align: center;
+  padding-top: 9px;
+  // margin: 10px;
+
   &__about {
-    width: 45%;
-    height: 50px;
-    text-align: center;
-    padding-top: 9px;
-    margin: 10px;
+    //change it to other button
+  }
+
+  &__project {
+    width: 26%;
+    margin: 0 1rem;
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
   }
 }
