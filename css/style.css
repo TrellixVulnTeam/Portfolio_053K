@@ -130,6 +130,9 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-margin-bottom-ex-small {
+  margin-bottom: 0.5rem !important; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
@@ -138,6 +141,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 5rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -305,33 +311,86 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 70%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
   .popup__left {
-    width: 34%;
-    display: table-cell; }
+    width: 35%;
+    display: table-cell;
+    padding-left: 10rem; }
   .popup__right {
-    width: 66%;
+    width: 58%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 0rem 0rem 0rem 10rem; }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 40vh; }
+  .popup__skill {
+    margin: -2rem 1.5rem; }
+    .popup__skill--react {
+      width: 10rem;
+      height: 10rem; }
+    .popup__skill--node {
+      width: 13rem;
+      height: 10rem; }
+    .popup__skill--express {
+      width: 14rem;
+      height: 9rem; }
+    .popup__skill--mongodb {
+      width: 15rem;
+      height: 10rem; }
+    .popup__skill--firebase {
+      width: 11.5rem;
+      height: 12rem; }
+    .popup__skill--oauth {
+      width: 10rem;
+      height: 10rem; }
+  .popup__title--main {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: -3rem; }
+  .popup__title--sub {
+    font-size: 3.5rem; }
+  .popup__title--tertiary {
+    font-size: 3rem; }
   .popup__text {
-    font-size: 2rem;
-    margin-bottom: 4rem;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #777;
+    font-size: 3rem;
+    padding-right: 15rem;
+    margin-top: -1.5rem;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  .popup__function--li {
+    margin-top: -1.5rem;
+    font-size: 2.5rem;
+    line-height: 5.5rem; }
+  .popup__videobox {
+    display: inline-block;
+    margin-right: 3rem; }
+  .popup__video {
+    width: 600px;
+    height: 350px;
+    margin-top: -2rem; }
+  .popup__btnbox {
+    width: 50%;
+    margin: 150px auto; }
+    .popup__btnbox--btn {
+      display: block;
+      font-size: 3rem;
+      text-decoration: none;
+      background-color: #83d4d8;
+      border-radius: 30px;
+      text-align: center;
+      margin: 3rem;
+      padding: 10px; }
 
 .row {
   max-width: 150rem;
