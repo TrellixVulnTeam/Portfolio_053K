@@ -58,6 +58,12 @@ body {
     background-color: #ff8882; }
   .border--projects {
     background-color: #fff; }
+  .border--experience {
+    background-color: #194350; }
+  .border--hobby {
+    background-color: #ff8882; }
+  .border--contact {
+    background-color: #fff; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -99,13 +105,28 @@ body {
 
 .heading-about {
   margin-top: 30rem;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
   color: #194350; }
 
 .heading-skills {
   margin-top: 30rem;
   margin-bottom: 5rem;
   color: #194350; }
+
+.heading-experience {
+  margin-top: 30rem;
+  margin-bottom: 5rem;
+  color: #194350; }
+
+.heading-hobby {
+  margin-top: 30rem;
+  margin-bottom: 5rem;
+  color: #194350; }
+
+.heading-contact {
+  margin-top: 30rem;
+  margin-bottom: 5rem;
+  color: #fff; }
 
 .heading-tools {
   margin-top: 15rem;
@@ -114,7 +135,7 @@ body {
 
 .heading-projects {
   margin-top: 30rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   color: #fff; }
 
 .paragraph {
@@ -217,17 +238,15 @@ body {
       background-color: #fff; }
 
 .card {
-  perspective: 100rem;
-  -moz-perspective: 150rem;
   position: relative;
-  height: 80rem;
+  height: 100rem;
   width: 30%;
   z-index: 10; }
   .card__side {
     color: white;
-    height: 90rem;
+    height: 80rem;
     transition: all 0.8s ease;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -237,40 +256,35 @@ body {
     overflow: hidden;
     display: inline-block; }
     .card__side--front {
-      background-color: turquoise;
+      background-color: #ff8882;
       border-radius: 20px; }
-    .card__side--back {
-      background-color: yellow;
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  .card__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-    .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/studylog.jpg); }
+  .card__picture--1 {
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem auto;
+    display: block; }
+  .card__picture--2 {
+    width: 35rem;
+    height: 25rem;
+    margin: 3rem auto -1rem;
+    display: block; }
   .card__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     text-transform: uppercase;
-    text-align: right;
-    color: #fff;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 75%; }
+    text-align: center;
+    color: #fff; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 194, 180, 0.85), rgba(255, 136, 130, 0.85)); }
   .card__description {
     font-size: 3rem;
-    padding: 1rem 8rem; }
+    padding: 1rem 8rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
   .card__ul {
     list-style-type: none;
     margin: 0 auto;
@@ -594,8 +608,38 @@ body {
 .section-projects {
   margin-top: -15vh;
   background-color: #194350;
-  height: 2000px; }
+  height: 1600px; }
   .section-projects__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+
+.section-experience {
+  margin-top: -15vh;
+  background-color: #ff8882;
+  height: 2000px; }
+  .section-experience__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+
+.section-hobby {
+  margin-top: -15vh;
+  background-color: #fff;
+  height: 2000px; }
+  .section-hobby__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+
+.section-contact {
+  margin-top: -15vh;
+  background-color: #194350;
+  height: 2000px; }
+  .section-contact__container {
     width: 60%;
     margin: 0 auto;
     display: flex;

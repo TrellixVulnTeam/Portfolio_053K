@@ -1,8 +1,8 @@
 .card {
-  perspective: 100rem;
-  -moz-perspective: 150rem;
+  // perspective: 100rem;
+  // -moz-perspective: 150rem;
   position: relative;
-  height: 80rem;
+  height: 100rem;
   width: 30%;
   z-index: 10;
 
@@ -50,9 +50,9 @@
 
   &__side {
     color: white;
-    height: 90rem;
+    height: 80rem;
     transition: all 0.8s ease;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -63,21 +63,21 @@
     display: inline-block;
 
     &--front {
-      background-color: turquoise;
+      background-color: $color-secondary-dark;
       border-radius: 20px;
     }
 
-    &--back {
-      background-color: yellow;
-      transform: rotateY(180deg);
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        );
-      }
-    }
+    // &--back {
+    //   background-color: yellow;
+    //   transform: rotateY(180deg);
+    //   &-1 {
+    //     background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-tertiary-light,
+    //       $color-tertiary-dark
+    //     );
+    //   }
+    // }
   }
 
   // &:hover &__side--front {
@@ -90,32 +90,27 @@
 
   //Front Side Styling
   &__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-
     &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-tertiary-light,
-          $color-tertiary-dark
-        ),
-        url(../img/studylog.jpg);
+      width: 25rem;
+      height: 25rem;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    &--2 {
+      width: 35rem;
+      height: 25rem;
+      margin: 3rem auto -1rem;
+      display: block;
     }
   }
 
   &__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
     color: $color-white;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 75%;
   }
 
   &__heading-span {
@@ -124,17 +119,21 @@
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.85),
-        rgba($color-secondary-dark, 0.85)
-      );
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   rgba($color-secondary-light, 0.85),
+      //   rgba($color-secondary-dark, 0.85)
+      // );
     }
   }
 
   &__description {
     font-size: 3rem;
     padding: 1rem 8rem;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
     // text-align: center;
   }
 

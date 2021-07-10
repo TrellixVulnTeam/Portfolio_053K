@@ -137,4 +137,16 @@ body {
   &--projects {
     background-color: $color-white;
   }
+
+  &--experience {
+    background-color: $color-primary;
+  }
+
+  &--hobby {
+    background-color: $color-secondary-dark;
+  }
+
+  &--contact {
+    background-color: $color-white;
+  }
 }
