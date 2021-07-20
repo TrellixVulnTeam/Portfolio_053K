@@ -8,6 +8,7 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  overflow: scroll;
 
   &:target {
     opacity: 1;
@@ -40,8 +41,27 @@
     border-radius: 5px;
     display: table;
     overflow: hidden;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 10rem;
+  }
+
+  &__top {
+    width: 100%;
+    display: block;
+
+    &--title-box {
+      width: 50%;
+      display: inline;
+      text-align: left;
+      padding-left: 10rem;
+    }
+
+    &--btn-box {
+      width: 50%;
+      display: inline;
+      text-align: right;
+      margin-left: 52%;
+    }
   }
 
   &__left {
@@ -63,49 +83,28 @@
     height: 40vh;
   }
 
-  &__skill {
-    margin: -2rem 1.5rem;
-
-    &--react {
-      width: 10rem;
-      height: 10rem;
-    }
-    &--node {
-      width: 13rem;
-      height: 10rem;
-    }
-    &--express {
-      width: 14rem;
-      height: 9rem;
-    }
-    &--mongodb {
-      width: 15rem;
-      height: 10rem;
-    }
-    &--firebase {
-      width: 11.5rem;
-      height: 12rem;
-    }
-    &--oauth {
-      width: 10rem;
-      height: 10rem;
-    }
-  }
-
   &__title {
     &--main {
-      font-size: 5rem;
-      text-align: center;
-      margin-top: -3rem;
+      font-size: 9rem;
+      // text-align: left;
+      display: inline-block;
+      margin-top: 0px;
     }
 
     &--sub {
       font-size: 3.5rem;
+      margin-bottom: 2.5rem;
     }
 
     &--tertiary {
       font-size: 3rem;
     }
+  }
+
+  &__skills-list {
+    font-size: 30px;
+    color: #df5e5e;
+    margin-top: -2rem;
   }
 
   &__text {
@@ -153,19 +152,17 @@
     margin-top: -2rem;
   }
 
-  &__btnbox {
-    width: 50%;
-    margin: 150px auto;
-
-    &--btn {
-      display: block;
-      font-size: 3rem;
-      text-decoration: none;
-      background-color: rgb(131, 212, 216);
-      border-radius: 30px;
-      text-align: center;
-      margin: 3rem;
-      padding: 10px;
-    }
+  &__btn {
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: rgb(131, 212, 216);
+    border-radius: 30px;
+    // text-align: center;
+    margin: 1rem;
+    padding: 1rem 4rem;
   }
 }
+
+// .temp-hidden {
+//   display: none;
+// }
