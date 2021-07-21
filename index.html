@@ -71,7 +71,7 @@
       <!-- <div class="border border--about"></div> -->
       <section class="section-about" id="about">
         <div class="u-center-text">
-          <h2 class="heading-secondary heading-about">Who am I</h2>
+          <h2 class="heading-secondary heading-about">Who I am</h2>
         </div>
 
         <div class="row">
@@ -83,7 +83,7 @@
             />
           </div>
           <div class="col-1-of-2">
-            <p class="paragraph">
+            <p class="paragraph section-about__paragraph ">
               Ready to take over the world, one line of code at the time!<br /><br />
               I approach every project with keen interest to processes and best
               practices. My focus is delivering
@@ -166,22 +166,26 @@
           </h2>
         </div>
         <div class="row">
+          <div class="section-skills__detail">
           <img
             class="section-skills__img section-skills__img--github"
             src="img/github.png"
             alt="github"
+          />
+          
+          <img
+            class="section-skills__img section-skills__img--jira"
+            src="img/jira.png"
+            alt="jira"
           />
           <img
             class="section-skills__img section-skills__img--pwf"
             src="img/pwf.png"
             alt="powerworkflow"
           />
-          <img
-            class="section-skills__img section-skills__img--jira"
-            src="img/jira.png"
-            alt="jira"
-          />
+          </div>
         </div>
+
       </section>
 
       <!-- <div class="border border--projects"></div> -->
@@ -190,8 +194,7 @@
           <h2 class="heading-secondary heading-projects">Projects</h2>
         </div>
 
-        <!-- Test start-->
-        <!-- Project1 - Studylog -->
+        <!-- Project1 - Study log -->
         <div class="section-projects__container">
           <div class="card">
             <div class="card__imgbox">
@@ -200,10 +203,10 @@
             </div>            
             <div class="card__content">
               <p class="card__description card__description--1">
-                Full-stack application shows what I am learning and what I am
-                  interested in
+                This Full-stack application shows what I am learning and what I am
+                  interested in.
               </p>              
-              <a href="#" >
+              <a href="#popup1" >
                 <img src="img/detail.png" class="btn--card" alt="Detail">
               </a>
               <a
@@ -217,172 +220,70 @@
                 target="_blank"
                 >
               <img src="img/git.png" class="btn--card" alt="Github">
+              </a>             
+            </div>
+          </div>
+          
+          <!-- Project2 - E commerce -->
+          <div class="card">
+            <div class="card__imgbox">
+              <img class="card__img card__img--ecom" src="img/ecommerce.png" alt="e-commerce" />
+              <h2 class="card__content--title">E-Commerce</h2>
+            </div>            
+            <div class="card__content">
+              <p class="card__description card__description--1">
+                This Full-stack E-Commerce application was built for capstone team
+              project at SAIT. 
+              </p>              
+              <a href="#popup2" >
+                <img src="img/detail.png" class="btn--card" alt="Detail">
+              </a>
+              <a
+                href="http://binooandbuffalo.herokuapp.com/"                
+                target="_blank"
+                >
+                <img src="img/live.png" class="btn--card" alt="Live Demo">
+              </a>
+              <a
+                href="https://github.com/Seolcita/studylog"                
+                target="_blank"
+                >
+              <img src="img/git.png" class="btn--card" alt="Github">
               </a>              
               
             </div>
           </div>
-          <!-- Project2 - Ecommerce -->
-          <div class="card">
-            <div class="card__imgbox">
-              <img class="card__img card__img--ecom" src="img/ecommerce.png" alt="ecommerce" />
-              <h2 class="card__content--title">E-Commerce</h2>
-            </div>
-            <div class="card__content"> 
-              <p class="card__description card__description--1">
-                Full-stack E-Commerce application built for capstone team
-                project.
-              </p>                 
-              <a href="#" class="btn--card-1">Detail</a>
-              <a
-                href="https://seolstudylog.web.app"
-                class="btn--card-1"
-                target="_blank"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Seolcita/studylog"
-                class="btn--card-1"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-
-           <!-- Project3 - Portfolio -->
-           <div class="card">
-            <div class="card__imgbox">
-              <img class="card__img card__img--ecom" src="img/portfolio.png" alt="ecommerce" />
-              <h2 class="card__content--title">Portfolio</h2>
-            </div>
-            <div class="card__content"> 
-              <p class="card__description card__description--1">
-                Front-end application for this portfolio
-              </p>                 
-              <a href="#" class="btn--card-1">Detail</a>
-              <a
-                href="https://seolstudylog.web.app"
-                class="btn--card-1"
-                target="_blank"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Seolcita/studylog"
-                class="btn--card-1"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Test end-->
-         <!-- temp-hidden start -->
-        <!-- <div class="section-projects__container">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture">
-                <img
-                  class="card__picture card__picture--1"
-                  src="img/studylog.png"
-                  alt="studylog"
-                />
-              </div>
-              <h1 class="card__heading">Study Log</h1>
-              <div class="card__details">
-                <p class="card__description">
-                  Full-stack application shows what I am learning and what I am
-                  interested in
-                </p>
-              </div>
-
-
- 
-              <div class="card__cta">
-                <a href="#popup1" class="btn btn__project">Detail</a>
-                <a
-                  href="https://seolstudylog.web.app"
-                  class="btn btn__project"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/Seolcita/studylog"
-                  class="btn btn__project"
-                  target="_blank"
-                  >Github</a
-                >
-              </div>              
-            </div>
-          </div>
-
           
+          <!-- Project3 - Portfolio -->
           <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture">
-                <img
-                  class="card__picture card__picture--2"
-                  src="img/ecommerce.png"
-                  alt="ecommerce"
-                />
-              </div>
-              <h1 class="card__heading">E-commerce</h1>
-              <div class="card__details">
-                <p class="card__description">
-                  Full-stack E-Commerce application built for capstone team
-                  project.
-                </p>
-
-                <div class="card__cta">
-                  <a href="#popup2" class="btn btn__project">Detail</a>
-                  <a
-                    href="http://binooandbuffalo.herokuapp.com/"
-                    class="btn btn__project"
-                    target="_blank"
-                    >Live</a
-                  >
-                  <a href="#" class="btn btn__project" target="_blank"
-                    >Github</a
-                  >
-                </div>
-              </div>
+            <div class="card__imgbox">
+              <img class="card__img card__img--ecom" src="img/portfolio.png" alt="Portfolio" />
+              <h2 class="card__content--title">Portfolio</h2>
+            </div>            
+            <div class="card__content">
+              <p class="card__description card__description--1">
+                This Front-end application is for this portfolio
+              </p>              
+              <a href="#popup3" >
+                <img src="img/detail.png" class="btn--card" alt="Detail">
+              </a>
+              <a
+                href="#"                
+                target="_blank"
+                >
+                <img src="img/live.png" class="btn--card" alt="Live Demo">
+              </a>
+              <a
+                href="https://github.com/Seolcita/Portfolio"                
+                target="_blank"
+                >
+              <img src="img/git.png" class="btn--card" alt="Github">
+              </a>              
             </div>
           </div>
-
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">
-                <img
-                  class="card__picture card__picture--1"
-                  src="img/portfolio.png"
-                  alt="portfolio"
-                />
-              </div>
-              <h1 class="card__heading">Portfolio</h1>
-              <div class="card__details">
-                <p class="card__description">
-                  Front-end application for this portfolio<br /><br />
-                </p>
-              </div>
-
-              <div class="card__cta">
-                <a href="#popup3" class="btn btn__project">Detail</a>
-                <a
-                  href="https://seolstudylog.web.app"
-                  class="btn btn__project"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  href="https://github.com/Seolcita/studylog"
-                  class="btn btn__project"
-                  target="_blank"
-                  >Github</a
-                >
-              </div>
-            </div>
-          </div> -->
-           <!-- temp-hidden ends -->
         </div>
       </section>
+
       <!-- <div class="border border--experience"></div> -->
       <section class="section-experience" id="experience">
         <div class="u-center-text">
@@ -399,6 +300,10 @@
       <section class="section-contact" id="contact">
         <div class="u-center-text">
           <h2 class="heading-secondary heading-contact">Contact</h2>
+        </div>
+        <div class="section-contact__container">
+          <div class="section-contact__container--left">left</div>
+          <div class="section-contact__container--right">right</div>
         </div>
       </section>
     </main>

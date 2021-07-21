@@ -1,92 +1,118 @@
 .section-about {
   background-color: $color-secondary-dark;
-  margin-top: -15vh;
+  // margin-top: -15vh;
   // height: 1200px;
-  height: 80vh;
+  height: 110vh;
+  position: relative;
 
   &__img {
-    width: 80%;
+    width: 50%;
     clip-path: circle(44% at 50% 42%);
+    
+    margin-left: 30%;
   }
   // @include respond(tab-port) {
   //     padding: 20rem 0;
   // }
 
   &__detail {
+    width: 70%;
     text-align: center;
+    // margin-left: -10rem;
+    // margin-right: 7rem;
+  }
+
+  &__paragraph {
+    margin-left: -3rem;
+    margin-right: 14rem;
   }
 }
 
 .section-skills {
-  margin-top: -15vh;
-  height: 2000px;
+
+  height: 200vh;
+  
+  &__detail {
+    width: 70%;
+    margin: 2rem auto;
+  }
 
   &__img {
-    height: 15rem;
-    margin: 7rem;
+    width: 8rem;
+    height: 9rem;
+    margin: 2.5rem 5rem;
 
     &--html {
-      width: 11.5rem;
+      width: 7.5rem;
+    }
+
+    &--css {
+      width: 10rem;
     }
 
     &--sass {
-      width: 20rem;
-      height: 10rem;
+      width: 13rem;
     }
 
     &--node {
-      width: 20rem;
-      height: 10rem;
+      width: 17rem;
+      height: 7rem;
+      margin-right: 3rem;
     }
 
     &--express {
-      width: 25rem;
-      height: 10rem;
+      width: 20rem;
+      height: 8rem;
+      margin: 2.5rem 3rem 1.5rem;
     }
 
     &--mongodb {
-      width: 25rem;
-      height: 10rem;
+      width: 19rem;
+      height: 11rem;
+      margin: 2.5rem 3rem 1.5rem;
     }
 
     &--firebase {
-      width: 18rem;
-      height: 15rem;
+      width: 15rem;
+      height: 12rem;
+      margin-right: 0rem;
+      margin: 2rem 0rem 2rem 3rem;
     }
 
     &--arduino {
-      width: 18rem;
-      height: 10rem;
-      padding-bottom: 13px;
+      width: 15rem;
+      height: 9rem;
+      margin-top: 6rem;
     }
 
     &--github {
-      width: 18rem;
-      height: 12rem;
+      width: 13rem;
+      height: 10rem;
+      
     }
 
     &--jira {
-      width: 20rem;
-      height: 11rem;
+      width: 18rem;
+      height: 10rem;
       border-radius: 10px;
     }
 
     &--pwf {
-      width: 20rem;
-      height: 12rem;
+      width: 18rem;
+      height: 10rem;
       border-radius: 10px;
     }
   }
 }
 
 .section-projects {
-  margin-top: -15vh;
+  
   background-color: $color-primary;
-  height: 1600px;
+  height: 140vh;
   // padding: 25rem 0 50 0;
 
   &__container {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -94,10 +120,8 @@
 }
 
 .section-experience {
-  margin-top: -15vh;
   background-color: $color-secondary-dark;
-  height: 2000px;
-  // padding: 25rem 0 50 0;
+  height: 150vh;
 
   &__container {
     width: 60%;
@@ -108,13 +132,13 @@
 }
 
 .section-hobby {
-  margin-top: -15vh;
+  
   background-color: $color-white;
-  height: 2000px;
+  height: 150vh;
   // padding: 25rem 0 50 0;
 
   &__container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -122,15 +146,25 @@
 }
 
 .section-contact {
-  margin-top: -15vh;
+  
   background-color: $color-primary;
-  height: 2000px;
+  height: 150vh;
   // padding: 25rem 0 50 0;
 
   &__container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+
+    &--left {
+      width: 100%;
+      height:80vh;
+      background: pink;
+    }
+    &--right {
+      width: 100%;
+      background: grey;
+    }
   }
 }
