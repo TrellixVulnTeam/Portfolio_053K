@@ -235,18 +235,75 @@ body {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
   .btn__project {
-    width: 26%;
-    margin: 0 1rem;
-    background-color: #fff;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: pink;
     color: #777; }
     .btn__project::after {
-      background-color: #fff; }
+      background-color: pink; }
+  .btn--card {
+    width: 6rem;
+    height: 6rem;
+    background-color: pink;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 1rem 1rem; }
+  .btn--card-1 {
+    width: 90%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    margin: 1rem;
+    color: black;
+    background-color: pink;
+    display: block;
+    border-radius: 25px; }
 
 .card {
   position: relative;
-  height: 100rem;
-  width: 30%;
-  z-index: 10; }
+  height: 27vh;
+  width: 25%;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  display: inline-block;
+  margin: 0 2rem;
+  background-color: white; }
+  .card__imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-30%); }
+  .card__img {
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #ff8882;
+    padding-bottom: 2rem; }
+    .card__img--ecom {
+      width: 100%;
+      height: 22.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+  .card__content {
+    width: 100%;
+    padding: 3rem 0rem;
+    text-align: center;
+    color: #f7f7f7;
+    transform: translateY(40rem);
+    opacity: 0; }
+    .card__content--title {
+      font-size: 3rem;
+      color: black;
+      margin: 0px;
+      text-align: center; }
+  .card:hover {
+    height: 41rem; }
+  .card:hover .card__content {
+    opacity: 1;
+    transform: translateY(-20rem);
+    transform: translateY(-25rem); }
   .card__side {
     color: white;
     height: 80rem;
@@ -290,6 +347,18 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    .card__description--1 {
+      font-size: 1.5rem;
+      padding: 1rem 8rem;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+      color: black;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0px;
+      text-align: left; }
   .card__ul {
     list-style-type: none;
     margin: 0 auto;
@@ -311,8 +380,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   opacity: 0;
-  visibility: hidden;
-  overflow: scroll; }
+  visibility: hidden; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -340,7 +408,7 @@ body {
     padding-top: 8rem;
     padding-bottom: 10rem; }
   .popup__top {
-    width: 100%;
+    width: 80%;
     display: block; }
     .popup__top--title-box {
       width: 50%;
@@ -351,27 +419,28 @@ body {
       width: 50%;
       display: inline;
       text-align: right;
-      margin-left: 52%; }
+      margin-left: 30%; }
   .popup__left {
-    width: 35%;
-    display: table-cell;
-    padding-left: 10rem; }
-  .popup__right {
-    width: 58%;
+    width: 55%;
     display: table-cell;
     vertical-align: middle;
-    padding: 0rem 0rem 0rem 10rem; }
+    padding-left: 10rem; }
+  .popup__right {
+    width: 45%;
+    display: table-cell;
+    vertical-align: middle; }
   .popup__img {
     display: block;
     width: 100%;
     height: 40vh; }
   .popup__title--main {
-    font-size: 9rem;
+    font-size: 6rem;
     display: inline-block;
     margin-top: 0px; }
   .popup__title--sub {
     font-size: 3.5rem;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    margin-top: 0px; }
   .popup__title--tertiary {
     font-size: 3rem; }
   .popup__skills-list {
@@ -380,7 +449,7 @@ body {
     margin-top: -2rem; }
   .popup__text {
     font-size: 3rem;
-    padding-right: 15rem;
+    padding-right: 20rem;
     margin-top: -1.5rem;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
