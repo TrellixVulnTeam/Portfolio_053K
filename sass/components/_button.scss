@@ -122,15 +122,22 @@
     margin: 1.5rem 0.5rem;
   }
 
-  &--card-1 {
-    width: 90%;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 0.5rem 0rem;
-    margin: 1rem;
-    color: black;
-    background-color: pink;
-    display: block;
-    border-radius: 25px;
+  // &--card-1 {
+  //   width: 90%;
+  //   font-size: 1.5rem;
+  //   text-decoration: none;
+  //   padding: 0.5rem 0rem;
+  //   margin: 1rem;
+  //   color: black;
+  //   background-color: pink;
+  //   display: block;
+  //   border-radius: 25px;
+  // }
+
+  &--submit {
+    width: 30%;
+    height: 3rem;
+    text-align: center;
+    margin-left: 40%;
   }
 }
