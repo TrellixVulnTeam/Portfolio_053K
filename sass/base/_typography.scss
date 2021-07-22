@@ -134,7 +134,7 @@ a:link, a:hover, a:visited {
 
 .heading-hobby {
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   color: $color-primary;
 }
 
@@ -146,11 +146,12 @@ a:link, a:hover, a:visited {
 
 .contact__title {
   font-size: 2.5rem;
-  margin: 3rem 0rem 1rem;
+  margin: 2.3rem 0rem 1rem;
   
 
   &--left {
     color: $color-secondary-dark;
+    
   }
 
   &--right {

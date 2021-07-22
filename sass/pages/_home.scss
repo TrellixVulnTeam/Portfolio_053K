@@ -134,15 +134,32 @@
 .section-hobby {
   
   background-color: $color-white;
-  height: 70rem;
+  height: 1000px;
   // padding: 25rem 0 50 0;
 
   &__container {
     width: 80%;
+    height: 500px;
+    background-color:white;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    position: relative;
+    color: black;
   }
+
+  &__imgbox {
+
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    &--p5 {
+      width: 100%;
+      margin-top: 330px;
+    }
+  }
+
+  
 }
 
 .section-contact {
@@ -164,13 +181,27 @@
       margin: auto;
       padding: 1rem 5rem;
       display:inline-block;
+      // position: relative;
+      // transform: translateX(90%);
+      
+      // &:hover {
+      //   transform: translateX(0);
+      // }
     }
     &--right {
       width: 65%;
-      height:600px;
+      height:610px;
       background: $color-secondary-dark;
       margin: auto;
       display:inline-block;
+      position: relative;
+      
+      // transition: 3s;
+      // transform: translateX(-25%);
+
+      // &:hover {
+      //   transform: translateX(0);
+      // }
 
       &--form {
         width: 80%;

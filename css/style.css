@@ -157,7 +157,7 @@ a:link, a:hover, a:visited {
 
 .heading-hobby {
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   color: #194350; }
 
 .heading-contact {
@@ -167,7 +167,7 @@ a:link, a:hover, a:visited {
 
 .contact__title {
   font-size: 2.5rem;
-  margin: 3rem 0rem 1rem; }
+  margin: 2.3rem 0rem 1rem; }
   .contact__title--left {
     color: #ff8882; }
   .contact__title--right {
@@ -298,7 +298,14 @@ a:link, a:hover, a:visited {
     width: 100%;
     height: 4rem;
     text-align: center;
-    border-radius: 1.7rem; }
+    border-radius: 1.7rem;
+    background-color: white;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0%;
+    padding-bottom: 5px; }
 
 .card {
   position: relative;
@@ -409,6 +416,47 @@ a:link, a:hover, a:visited {
     width: 80%;
     margin: 0 auto;
     text-align: center; }
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s; }
+  .clip--1 {
+    background-color: lightgray;
+    clip-path: polygon(0 0, 25% 0, 49% 100%, 0% 100%); }
+  .clip--2 {
+    background: url(../img/camping.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    clip-path: polygon(17% 0, 81% 0, 59% 100%, 36% 100%);
+    background-repeat: repeat-y; }
+  .clip--3 {
+    background: url(../img/arduino-3.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(79% 0, 100% 0, 100% 100%, 59% 100%); }
+  .clip__container--2 {
+    width: 45%;
+    height: 60%;
+    margin-top: 180px;
+    margin-left: 10rem; }
+  .clip__title--2 {
+    color: white;
+    font-size: 3.3rem;
+    padding-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .clip__title--2--center {
+      padding-left: 20%; }
+
+.section-hobby__container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+
+.section-hobby__container .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 
 .popup {
   height: 100vh;
@@ -746,12 +794,23 @@ a:link, a:hover, a:visited {
 
 .section-hobby {
   background-color: #fff;
-  height: 70rem; }
+  height: 1000px; }
   .section-hobby__container {
     width: 80%;
+    height: 500px;
+    background-color: white;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    position: relative;
+    color: black; }
+  .section-hobby__imgbox {
+    width: 20%;
+    position: relative;
+    display: inline-block; }
+    .section-hobby__imgbox--p5 {
+      width: 100%;
+      margin-top: 330px; }
 
 .section-contact {
   background-color: #194350;
@@ -769,10 +828,11 @@ a:link, a:hover, a:visited {
       display: inline-block; }
     .section-contact__container--right {
       width: 65%;
-      height: 600px;
+      height: 610px;
       background: #ff8882;
       margin: auto;
-      display: inline-block; }
+      display: inline-block;
+      position: relative; }
       .section-contact__container--right--form {
         width: 80%;
         height: 90%;
