@@ -147,7 +147,16 @@ a:link, a:hover, a:visited {
 .contact__title {
   font-size: 2.5rem;
   margin: 3rem 0rem 1rem;
-  color: $color-primary;
+  
+
+  &--left {
+    color: $color-secondary-dark;
+  }
+
+  &--right {
+    color: $color-white;
+    font-size: 3rem;
+  }
 }
 
 .contact__icon {
@@ -162,3 +171,18 @@ a:link, a:hover, a:visited {
   }
 }
 
+// Input Placeholder font color
+
+::-webkit-input-placeholder { 
+  // color: $color-primary-dark;
+  color: white;
+}
+::-moz-placeholder { 
+  color: white;
+}
+:-ms-input-placeholder { 
+  color: white;
+}
+:-moz-placeholder { 
+  color: white;
+}

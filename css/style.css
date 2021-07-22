@@ -167,8 +167,12 @@ a:link, a:hover, a:visited {
 
 .contact__title {
   font-size: 2.5rem;
-  margin: 3rem 0rem 1rem;
-  color: #194350; }
+  margin: 3rem 0rem 1rem; }
+  .contact__title--left {
+    color: #ff8882; }
+  .contact__title--right {
+    color: #fff;
+    font-size: 3rem; }
 
 .contact__icon {
   width: 3rem;
@@ -178,6 +182,18 @@ a:link, a:hover, a:visited {
     margin: 0 1rem;
     width: 3.5rem;
     height: 3.5rem; }
+
+::-webkit-input-placeholder {
+  color: white; }
+
+::-moz-placeholder {
+  color: white; }
+
+:-ms-input-placeholder {
+  color: white; }
+
+:-moz-placeholder {
+  color: white; }
 
 .u-center-text {
   text-align: center !important; }
@@ -279,10 +295,10 @@ a:link, a:hover, a:visited {
     padding: 1rem 1rem;
     margin: 1.5rem 0.5rem; }
   .btn--submit {
-    width: 30%;
-    height: 3rem;
+    width: 100%;
+    height: 4rem;
     text-align: center;
-    margin-left: 40%; }
+    border-radius: 1.7rem; }
 
 .card {
   position: relative;
@@ -730,7 +746,7 @@ a:link, a:hover, a:visited {
 
 .section-hobby {
   background-color: #fff;
-  height: 150vh; }
+  height: 70rem; }
   .section-hobby__container {
     width: 80%;
     margin: 0 auto;
@@ -739,35 +755,44 @@ a:link, a:hover, a:visited {
 
 .section-contact {
   background-color: #194350;
-  height: 150vh; }
+  height: 1000px; }
   .section-contact__container {
     display: flex;
     width: 80%;
     margin: auto; }
     .section-contact__container--left {
-      width: 40%;
-      height: 80vh;
-      background: pink;
+      width: 35%;
+      height: 550px;
+      background: white;
       margin: auto;
       padding: 1rem 5rem;
       display: inline-block; }
     .section-contact__container--right {
-      width: 60%;
-      height: 80vh;
-      background: grey;
+      width: 65%;
+      height: 600px;
+      background: #ff8882;
       margin: auto;
       display: inline-block; }
       .section-contact__container--right--form {
         width: 80%;
         height: 90%;
-        background-color: rgba(255, 255, 255, 0.728);
         margin: 4% auto; }
       .section-contact__container--right--input {
         width: 100%;
         height: 5rem;
         border-radius: 2rem;
-        margin: 0.5rem auto; }
+        border: 3px solid white;
+        margin: 0.5rem auto;
+        padding: 0 3rem;
+        font-size: 1.5rem;
+        background-color: #ff8882; }
       .section-contact__container--right--text {
         width: 100%;
-        border-radius: 3rem;
-        margin: 0.5rem auto; }
+        border-radius: 2rem;
+        border: 3px solid white;
+        margin: 0.5rem auto;
+        padding: 3rem;
+        font-size: 2rem;
+        font-family: "Lato", sans-serif;
+        color: white;
+        background-color: #ff8882; }
