@@ -138,6 +138,10 @@ a:link, a:hover, a:visited {
     margin-bottom: 1.5rem; }
   .paragraph--contact {
     font-size: 1.8rem; }
+  .paragraph--clip3 {
+    width: 80%;
+    font-size: 1.8rem;
+    margin-top: 1rem; }
 
 .span--contact {
   margin-left: 1rem; }
@@ -306,6 +310,15 @@ a:link, a:hover, a:visited {
     margin-top: 1rem;
     margin-left: 0%;
     padding-bottom: 5px; }
+  .btn__clip--3 {
+    display: block;
+    width: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 25px; }
 
 .card {
   position: relative;
@@ -442,7 +455,12 @@ a:link, a:hover, a:visited {
     width: 45%;
     height: 60%;
     margin-top: 180px;
-    margin-left: 10rem; }
+    margin-left: 9rem; }
+  .clip__container--3 {
+    width: 50%;
+    height: 80%;
+    margin-left: 7rem;
+    margin-top: 4rem; }
   .clip__title--2 {
     color: white;
     font-size: 3.3rem;
@@ -450,7 +468,23 @@ a:link, a:hover, a:visited {
     margin-top: 0;
     margin-bottom: 0; }
     .clip__title--2--center {
-      padding-left: 20%; }
+      padding-left: 20%;
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 0; }
+  .clip__title--3 {
+    color: #194350;
+    font-size: 3.3rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0; }
+  .clip__img {
+    height: 18rem;
+    margin-right: 2rem;
+    margin-top: 5rem; }
+    .clip__img--smp {
+      width: 20rem; }
+    .clip__img--smf {
+      width: 22rem; }
 
 .section-hobby__container:hover .clip {
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
@@ -460,7 +494,7 @@ a:link, a:hover, a:visited {
 
 .popup {
   height: 100vh;
-  width: 100%;
+  width: 70%;
   position: fixed;
   top: 0;
   left: 0;
@@ -486,7 +520,8 @@ a:link, a:hover, a:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 80%;
+    height: 90rem;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -521,22 +556,22 @@ a:link, a:hover, a:visited {
     width: 100%;
     height: 40vh; }
   .popup__title--main {
-    font-size: 6rem;
+    font-size: 3rem;
     display: inline-block;
     margin-top: 0px; }
   .popup__title--sub {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 2.5rem;
     margin-top: 0px; }
   .popup__title--tertiary {
     font-size: 3rem; }
   .popup__skills-list {
-    font-size: 30px;
+    font-size: 2rem;
     color: #df5e5e;
     margin-top: -2rem; }
   .popup__text {
-    font-size: 3rem;
-    padding-right: 20rem;
+    font-size: 2rem;
+    padding-right: 5rem;
     margin-top: -1.5rem;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -550,8 +585,8 @@ a:link, a:hover, a:visited {
     display: inline-block;
     margin-right: 3rem; }
   .popup__video {
-    width: 600px;
-    height: 350px;
+    width: 400px;
+    height: 200px;
     margin-top: -2rem; }
   .popup__btn {
     font-size: 2rem;
@@ -762,6 +797,10 @@ a:link, a:hover, a:visited {
       width: 15rem;
       height: 9rem;
       margin-top: 6rem; }
+    .section-skills__img--wordpress {
+      width: 8.5rem;
+      height: 8.5rem;
+      margin: 0rem 0rem 3.5rem 5rem; }
     .section-skills__img--github {
       width: 13rem;
       height: 10rem; }
@@ -797,7 +836,7 @@ a:link, a:hover, a:visited {
   height: 1000px; }
   .section-hobby__container {
     width: 80%;
-    height: 500px;
+    height: 550px;
     background-color: white;
     margin: 0 auto;
     display: flex;
@@ -856,3 +895,98 @@ a:link, a:hover, a:visited {
         font-family: "Lato", sans-serif;
         color: white;
         background-color: #ff8882; }
+
+.project-detail__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: table;
+  margin-top: 15rem; }
+
+.project-detail__top {
+  width: 80%;
+  display: block; }
+  .project-detail__top--title-box {
+    width: 50%;
+    display: inline;
+    text-align: left;
+    padding-left: 10rem; }
+
+.project-detail__menu-box {
+  position: fixed;
+  top: 10rem;
+  right: 10rem;
+  width: 5%;
+  display: block;
+  position: fix;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.project-detail__left {
+  width: 55%;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10rem; }
+
+.project-detail__right {
+  width: 45%;
+  display: table-cell;
+  vertical-align: middle; }
+
+.project-detail__img {
+  display: block;
+  width: 100%;
+  height: 40vh; }
+
+.project-detail__title--main {
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 0px; }
+
+.project-detail__title--sub {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0px; }
+
+.project-detail__title--tertiary {
+  font-size: 3rem; }
+
+.project-detail__skills-list {
+  font-size: 2rem;
+  color: #df5e5e;
+  margin-top: -2rem; }
+
+.project-detail__text {
+  font-size: 2rem;
+  padding-right: 5rem;
+  margin-top: -1.5rem;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto; }
+
+.project-detail__function--li {
+  margin-top: -1.5rem;
+  font-size: 2.5rem;
+  line-height: 5.5rem; }
+
+.project-detail__videobox {
+  display: inline-block;
+  margin-right: 3rem; }
+
+.project-detail__video {
+  width: 400px;
+  height: 200px;
+  margin-top: -2rem; }
+
+.project-detail__btn {
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: #83d4d8;
+  border-radius: 30px;
+  margin: 1rem;
+  padding: 1rem 4rem; }

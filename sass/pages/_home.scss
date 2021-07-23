@@ -85,6 +85,12 @@
       margin-top: 6rem;
     }
 
+    &--wordpress {
+      width: 8.5rem;
+      height: 8.5rem;
+      margin: 0rem 0rem 3.5rem 5rem;
+    }
+
     &--github {
       width: 13rem;
       height: 10rem;
@@ -139,7 +145,7 @@
 
   &__container {
     width: 80%;
-    height: 500px;
+    height: 550px;
     background-color:white;
     margin: 0 auto;
     display: flex;
