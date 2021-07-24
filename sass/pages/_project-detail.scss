@@ -1,5 +1,6 @@
 .project-detail {
   height: 2000px;
+  background-color: $color-primary-dark;
 
   &__menu-box {
     position: fixed;
@@ -17,7 +18,7 @@
       width: 7rem;
       height: 7rem;
       margin-bottom: 3rem;
-      border: 2px solid $color-primary;
+      border: 2px solid $color-grey-light-1;
       border-radius: 50%;
       transition: all 0.5s;
       position: relative;
@@ -29,7 +30,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: $color-primary;
+        background-color: $color-grey-light-1;
         border-radius: 50%;
         z-index: -1;
         transition: all 0.5s;
@@ -42,11 +43,13 @@
       }
 
       &:hover i {
-        color: white;
+        color: $color-primary;
       }
 
       i {
         transition: all 0.5s;
+        // color: $color-grey-light-1;
+        color: rgb(232, 221, 221);
       }
 
       &:after {
@@ -61,7 +64,7 @@
         z-index: -1;
         transition: all 0.5s;
         opacity: 0;
-        border: 2px dashed $color-primary;
+        border: 2px dashed $color-grey-light-1;
         box-sizing: border-box;
       }
 
@@ -85,7 +88,7 @@
     &--title-box {
       width: 100%;
       padding-left: 10rem;
-      margin-top: 5rem;
+      padding-top: 5rem;
     }
   }
 
@@ -99,12 +102,14 @@
     &--main {
       font-size: 5rem;
       margin-bottom: 2rem;
+      color: $color-grey-light-1;
     }
 
     &--sub {
       font-size: 3rem;
       margin-bottom: 2.5rem;
       margin-top: 5rem;
+      color: $color-grey-light-1;
     }
 
     &--tertiary {
@@ -126,6 +131,7 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    color: $color-grey-dark-2;
   }
 
   &__function {
@@ -136,6 +142,7 @@
       margin-top: -1.7rem;
       font-size: 2.3rem;
       line-height: 5.5rem;
+      color: $color-grey-dark-2;
     }
   }
 
@@ -143,6 +150,7 @@
     display: block;
     margin-right: 3rem;
     padding-left: 3%;
+    color: $color-grey-light-1;
   }
 
   &__video {
