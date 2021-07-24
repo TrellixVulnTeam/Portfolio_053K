@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/icon-font.css" />
     <link rel="stylesheet" href="../../css/style.css" />
@@ -18,40 +19,46 @@
 <body>
   <div class="project-detail" id="popup1">
     <div class="project-detail__menu-box">
-      <ul>
-      <li><a
-        href="https://seolstudylog.web.app"
-        class="project-detail__btn"
-        target="_blank"
-        >Live</a
-      >
-    </li>
-    <li><a
-        href="https://github.com/Seolcita/studylog"
-        class="project-detail__btn"
-        target="_blank"
-        >Github
-      </a></li>
-      <li><a href="#" class="project-detail__btn">Resume</a></li>
-      <li><a href="#" class="project-detail__btn">Contact</a></li>
-    </ul>
+      <ul class="project-detail__ul">
+        <li class="list" >
+          <a
+          href="https://seolstudylog.web.app"
+          target="_blank"
+          ><i class="far fa-eye"></i>
+          </a>
+        </li>
+        <li class="list">
+          <a
+          href="https://github.com/Seolcita/studylog"
+          target="_blank"
+          ><i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" >
+            <i class="far fa-file-pdf"></i>
+          </a>
+        </li>
+        <li><a href="#" ><i class="fas fa-envelope-open-text"></i></a></li>
+        
+      </ul>
+    </div>
+    <div class="project-detail__top">
+      <div class="project-detail__top--title-box">
+        <h1 class="project-detail__title--main">Study Log</h1>
+      </div>
     </div>
     <div class="project-detail__content">
       
-      <div class="project-detail__top">
-        <div class="project-detail__top--title-box">
-          <h1 class="project-detail__title--main u-margin-bottom-medium">Study Log</h1>
-        </div>
-
+      
         
-      </div>
-      <div class="temp-hidden">
         <!-- <div class="project-detail__left">
-          <img src="img/box.png" alt="box1" class="project-detail__img" />
+          <div class="project-detail__img-box">
+            <img src="../../img/box.png" class="project-detail__thumbnail" alt="study log">
+          </div>
         </div> -->
-        <div class="project-detail__left">
-          <a href="#projects" class="project-detail__close">&times;</a>
 
+        <div class="project-detail__right">
           <h2 class="project-detail__title--sub">Motive</h2>
           <p class="project-detail__text">
             I love learning and taking notes. I wanted to create my own note
@@ -63,6 +70,7 @@
             what I am interested.
             <br />
           </p>
+        
           <h2 class="project-detail__title--sub">Stacks</h2>
           <h4 class="project-detail__skills-list">
             React &nbsp;&#183;&nbsp; Node &nbsp;&#183;&nbsp; Express
@@ -82,8 +90,7 @@
               Retrieve notes from selected category
             </li>
           </ul>
-        </div>
-        <div class="project-detail__right">
+
           <div class="project-detail__videobox">
             <h3 class="project-detail__title--tertiary">>> As an admin</h3>
             <iframe
@@ -101,7 +108,10 @@
             </iframe>
           </div>
         </div>
-    </div>
+        
+          
+        </div>
+    
   </div>
 </div>
 </div>
