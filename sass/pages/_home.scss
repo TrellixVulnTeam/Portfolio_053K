@@ -1,3 +1,5 @@
+/** @format */
+
 .section-about {
   background-color: $color-secondary-dark;
   // margin-top: -15vh;
@@ -8,7 +10,7 @@
   &__img {
     width: 50%;
     clip-path: circle(44% at 50% 42%);
-    
+
     margin-left: 30%;
   }
   // @include respond(tab-port) {
@@ -29,9 +31,8 @@
 }
 
 .section-skills {
-
   height: 200vh;
-  
+
   &__detail {
     width: 70%;
     margin: 2rem auto;
@@ -94,7 +95,6 @@
     &--github {
       width: 13rem;
       height: 10rem;
-      
     }
 
     &--jira {
@@ -112,7 +112,6 @@
 }
 
 .section-projects {
-  
   background-color: $color-primary;
   height: 140vh;
   // padding: 25rem 0 50 0;
@@ -127,18 +126,123 @@
 
 .section-experience {
   background-color: $color-secondary-dark;
-  height: 150vh;
+  height: 1500px;
+  color: $color-primary-dark;
 
   &__container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &__left {
+    // margin: auto;
+  }
+
+  &__right {
+    // margin: auto;
+  }
+
+  &--timeline-1 {
+    width: 85%;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 5px;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      right: 0rem;
+      // transform: translateX(-50%);
+    }
+  }
+
+  &--timeline-2 {
+    width: 85%;
+    position: relative;
+    margin-left: 3rem;
+
+    &::before {
+      content: "";
+      width: 5px;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0rem;
+      // transform: translateX(-50%);
+    }
+  }
+
+  &__content {
+    background-color: #444;
+    margin: 2rem;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    &--edu {
+      &::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background: white;
+        position: absolute;
+        top: 15%;
+        right: -2.7rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &:hover::before {
+        background-color: crimson;
+      }
+    }
+
+    &--work {
+      &::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background: white;
+        position: absolute;
+        top: 15%;
+        left: -2.7rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      &:hover::before {
+        background-color: crimson;
+      }
+    }
+  }
+
+  &__time {
+    text-align: end;
   }
 }
 
 .section-hobby {
-  
   background-color: $color-white;
   height: 1000px;
   // padding: 25rem 0 50 0;
@@ -146,7 +250,7 @@
   &__container {
     width: 80%;
     height: 550px;
-    background-color:white;
+    background-color: white;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -155,7 +259,6 @@
   }
 
   &__imgbox {
-
     width: 20%;
     position: relative;
     display: inline-block;
@@ -164,12 +267,9 @@
       margin-top: 330px;
     }
   }
-
-  
 }
 
 .section-contact {
-  
   background-color: $color-primary;
   height: 1000px;
   // padding: 25rem 0 50 0;
@@ -178,30 +278,29 @@
     display: flex;
     width: 80%;
     margin: auto;
-    
 
     &--left {
       width: 35%;
-      height:550px;
+      height: 550px;
       background: white;
       margin: auto;
       padding: 1rem 5rem;
-      display:inline-block;
+      display: inline-block;
       // position: relative;
       // transform: translateX(90%);
-      
+
       // &:hover {
       //   transform: translateX(0);
       // }
     }
     &--right {
       width: 65%;
-      height:610px;
+      height: 610px;
       background: $color-secondary-dark;
       margin: auto;
-      display:inline-block;
+      display: inline-block;
       position: relative;
-      
+
       // transition: 3s;
       // transform: translateX(-25%);
 

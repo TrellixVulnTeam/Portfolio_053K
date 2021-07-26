@@ -63,13 +63,13 @@ body {
   .border--skills {
     background-color: #ff8882; }
   .border--projects {
-    background-color: #3b3636; }
+    background-color: #fff; }
   .border--experience {
     background-color: #194350; }
   .border--hobby {
     background-color: #ff8882; }
   .border--contact {
-    background-color: #3b3636; }
+    background-color: #fff; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -79,7 +79,9 @@ body {
   color: #777;
   padding: 3rem; }
 
-a:link, a:hover, a:visited {
+a:link,
+a:hover,
+a:visited {
   color: #194350;
   text-decoration: none; }
 
@@ -94,7 +96,7 @@ a:link, a:hover, a:visited {
   animation-timing-function: ease-out; }
 
 .heading-primary--sub {
-  color: #3b3636;
+  color: white;
   display: block;
   font-size: 4rem;
   font-weight: 700;
@@ -133,7 +135,7 @@ a:link, a:hover, a:visited {
 .heading-projects {
   margin-top: 10rem;
   margin-bottom: 13rem;
-  color: #3b3636; }
+  color: #fff; }
 
 .paragraph {
   font-size: 2rem;
@@ -173,7 +175,7 @@ a:link, a:hover, a:visited {
 .heading-contact {
   margin-top: 10rem;
   margin-bottom: 5rem;
-  color: #3b3636; }
+  color: #fff; }
 
 .contact__title {
   font-size: 2.5rem;
@@ -181,7 +183,7 @@ a:link, a:hover, a:visited {
   .contact__title--left {
     color: #ff8882; }
   .contact__title--right {
-    color: #3b3636;
+    color: #fff;
     font-size: 3rem; }
 
 .contact__icon {
@@ -400,7 +402,7 @@ a:link, a:hover, a:visited {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    color: #3b3636; }
+    color: #fff; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -528,7 +530,7 @@ a:link, a:hover, a:visited {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 90rem;
-    background-color: #3b3636;
+    background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     display: table;
@@ -645,7 +647,7 @@ a:link, a:hover, a:visited {
   display: none; }
 
 .navigation__button {
-  background-color: #3b3636;
+  background-color: #fff;
   height: 10rem;
   width: 10rem;
   position: fixed;
@@ -752,6 +754,7 @@ a:link, a:hover, a:visited {
   top: 0;
   transform: rotate(-135deg); }
 
+/** @format */
 .section-about {
   background-color: #ff8882;
   height: 110vh;
@@ -830,15 +833,79 @@ a:link, a:hover, a:visited {
 
 .section-experience {
   background-color: #ff8882;
-  height: 150vh; }
+  height: 1500px;
+  color: #172e35; }
   .section-experience__container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around; }
+    display: flex; }
+  .section-experience--timeline-1 {
+    width: 85%;
+    position: relative; }
+    .section-experience--timeline-1::before {
+      content: "";
+      width: 5px;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      right: 0rem; }
+  .section-experience--timeline-2 {
+    width: 85%;
+    position: relative;
+    margin-left: 3rem; }
+    .section-experience--timeline-2::before {
+      content: "";
+      width: 5px;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0rem; }
+  .section-experience__content {
+    background-color: #444;
+    margin: 2rem;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    position: relative;
+    color: white; }
+    .section-experience__content h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2rem; }
+    .section-experience__content h3 {
+      font-size: 1.8rem; }
+    .section-experience__content p {
+      font-size: 1.6rem; }
+    .section-experience__content--edu::before {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      position: absolute;
+      top: 15%;
+      right: -2.7rem;
+      border-radius: 50%;
+      cursor: pointer; }
+    .section-experience__content--edu:hover::before {
+      background-color: crimson; }
+    .section-experience__content--work::before {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      position: absolute;
+      top: 15%;
+      left: -2.7rem;
+      border-radius: 50%;
+      cursor: pointer; }
+    .section-experience__content--work:hover::before {
+      background-color: crimson; }
+  .section-experience__time {
+    text-align: end; }
 
 .section-hobby {
-  background-color: #3b3636;
+  background-color: #fff;
   height: 1000px; }
   .section-hobby__container {
     width: 80%;
